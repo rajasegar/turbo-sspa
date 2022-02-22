@@ -52,7 +52,9 @@
         "@single-spa/welcome": "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js",
         "@starwars/root-config": "//localhost:9000/starwars-root-config.js",
         "@starwars/planets": "//localhost:9001/starwars-planets.js",
-        "@starwars/people": "//localhost:9002/starwars-people.js"
+          "@starwars/people": "//localhost:9002/starwars-people.js",
+          "@starwars/styleguide": "//localhost:9004/starwars-styleguide.js",
+        "@starwars/navbar": "//localhost:9003/starwars-navbar.js"
       }
     }
   </script>
@@ -80,6 +82,7 @@
   </noscript>
   <script>
     System.import('@starwars/root-config');
+    System.import('@starwars/styleguide');
   </script>
   <import-map-overrides-full show-when-local-storage="devtools" dev-libs></import-map-overrides-full>
 </body>
