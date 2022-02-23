@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Root Config</title>
+  <title>Micro-Frontends with Single SPA and Turborepo</title>
 
   <!--
     Remove this if you only support browsers that support async/await.
@@ -36,7 +36,9 @@
       "imports": {
           "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js",
 	  "react": "https://cdn.jsdelivr.net/npm/react@17.0.1/umd/react.production.min.js",
-	  "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@17.0.1/umd/react-dom.production.min.js"
+	  "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@17.0.1/umd/react-dom.production.min.js",
+	  "rxjs": "https://cdn.jsdelivr.net/npm/@esm-bundle/rxjs@6.6.3/system/es2015/rxjs.min.js",
+    "rxjs/operators": "https://cdn.jsdelivr.net/npm/@esm-bundle/rxjs@6.6.3/system/es2015/rxjs-operators.min.js"
       }
     }
   </script>
@@ -53,8 +55,9 @@
         "@starwars/root-config": "//localhost:9000/starwars-root-config.js",
         "@starwars/planets": "//localhost:9001/starwars-planets.js",
           "@starwars/people": "//localhost:9002/starwars-people.js",
+          "@starwars/navbar": "//localhost:9003/starwars-navbar.js",
           "@starwars/styleguide": "//localhost:9004/starwars-styleguide.js",
-        "@starwars/navbar": "//localhost:9003/starwars-navbar.js"
+        "@starwars/api": "//localhost:9005/starwars-api.js"
       }
     }
   </script>

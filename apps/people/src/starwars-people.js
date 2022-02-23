@@ -14,3 +14,9 @@ const lifecycles = singleSpaReact({
 });
 
 export const { bootstrap, mount, unmount } = lifecycles;
+
+export function getFilmsComponent() {
+  return import(
+    /* webpackChunkName: "films-component" */ "./films/films.component.js"
+  );
+}
