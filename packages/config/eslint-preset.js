@@ -1,11 +1,9 @@
 module.exports = {
-  extends: ["next", "prettier"],
+  extends: ["react-important-stuff", "prettier"],
   settings: {
     next: {
       rootDir: ["apps/*/", "packages/*/"],
     },
   },
-  rules: {
-    "@next/next/no-html-link-for-pages": "off",
-  },
+  parser: "@babel/eslint-parser",
 };
