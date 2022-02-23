@@ -1,4 +1,4 @@
-# Turborepo starter with pnpm
+# Single SPA Microfrontends using Turborepo starter with pnpm
 
 This is an official starter turborepo.
 
@@ -8,19 +8,19 @@ This turborepo uses [pnpm](https://pnpm.io) as a packages manager. It includes t
 
 ### Apps and Packages
 
-- `docs`: a [Next.js](https://nextjs.org) app
-- `web`: another [Next.js](https://nextjs.org) app
-- `ui`: a stub React component library shared by both `web` and `docs` applications
-- `config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `tsconfig`: `tsconfig.json`s used throughout the monorepo
+- `root-config`: a [single-spa](https://single-spa.js.org) root-config
+- `navbar`: core navigation [single-spa](https://single-spa.js.org) microfrontend
+- `planets`: a [single-spa](https://single-spa.js.org) microfrontend for planets in the star wars universe
+- `people`: a [single-spa](https://single-spa.js.org) microfrontend for people in the star wars universe
+- `styleguide`: An in-browser ES module for common css and javascript components
+- `api`: An in-browser javascript module for communication with the API 
+- `config`: `eslint` configurations (includes `eslint-config-react-important-stuff` and `eslint-config-prettier`)
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 
 ### Utilities
 
 This turborepo has some additional tools already setup for you:
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
 - [ESLint](https://eslint.org/) for code linting
 - [Prettier](https://prettier.io) for code formatting
 
