@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "webpack serve --port 9005",
-    "build": "webpack --mode=production",
+    "build": "webpack --mode=production && cp ./dist/starwars-api.js ../../apps/root-config/dist",
     "analyze": "webpack --mode=production --env analyze",
     "lint": "eslint src",
     "format": "prettier --write .",
