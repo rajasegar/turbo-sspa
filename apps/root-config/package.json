@@ -9,7 +9,7 @@
     "check-format": "prettier --check .",
     "prepare": "husky install",
     "build": "concurrently pnpm:build:*",
-    "build:webpack": "webpack --mode=production"
+    "build:webpack": "webpack --mode=production && cp -R ./dist/* ../../public"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",

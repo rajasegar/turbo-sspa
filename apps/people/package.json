@@ -5,7 +5,7 @@
     "dev": "webpack serve --port 9002",
     "start:standalone": "webpack serve --env standalone",
     "build": "concurrently pnpm:build:*",
-    "build:webpack": "webpack --mode=production && cp ./dist/starwars-people.js ../../apps/root-config/dist",
+    "build:webpack": "webpack --mode=production && cp ./dist/starwars-people.js ../../public",
     "analyze": "webpack --mode=production --env analyze",
     "lint": "eslint src --ext js",
     "format": "prettier --write .",
