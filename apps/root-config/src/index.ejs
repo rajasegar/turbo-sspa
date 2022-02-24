@@ -46,12 +46,19 @@
 
   <!-- Add your organization's prod import map URL to this script's src  -->
   <!-- <script type="systemjs-importmap" src="/importmap.json"></script> -->
+    <script type="systemjs-importmap">
+    {
+      "imports": {
+        "@starwars/root-config": "https://turbo-sspa.vercel.app/starwars-root-config.js"
+      }
+    }
+  </script>
+
 
   <% if (isLocal) { %>
   <script type="systemjs-importmap">
     {
       "imports": {
-        "@single-spa/welcome": "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js",
         "@starwars/root-config": "//localhost:9000/starwars-root-config.js",
         "@starwars/planets": "//localhost:9001/starwars-planets.js",
           "@starwars/people": "//localhost:9002/starwars-people.js",

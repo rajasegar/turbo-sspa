@@ -1,5 +1,6 @@
 {
   "name": "@starwars/planets",
+  "version": "0.0.0",
   "scripts": {
     "dev": "webpack serve --port 9001",
     "start:standalone": "webpack serve --env standalone",

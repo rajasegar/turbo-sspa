@@ -1,5 +1,6 @@
 {
   "name": "@starwars/people",
+  "version": "0.0.0",
   "scripts": {
     "dev": "webpack serve --port 9002",
     "start:standalone": "webpack serve --env standalone",
