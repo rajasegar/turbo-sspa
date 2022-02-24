@@ -31,33 +31,11 @@
 
     More information about shared dependencies can be found at https://single-spa.js.org/docs/recommended-setup#sharing-with-import-maps.
   -->
-  <script type="systemjs-importmap">
-    {
-      "imports": {
-          "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js",
-	  "react": "https://cdn.jsdelivr.net/npm/react@17.0.1/umd/react.production.min.js",
-	  "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@17.0.1/umd/react-dom.production.min.js",
-	  "rxjs": "https://cdn.jsdelivr.net/npm/@esm-bundle/rxjs@6.6.3/system/es2015/rxjs.min.js",
-    "rxjs/operators": "https://cdn.jsdelivr.net/npm/@esm-bundle/rxjs@6.6.3/system/es2015/rxjs-operators.min.js"
-      }
-    }
-  </script>
   <link rel="preload" href="https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js" as="script">
 
   <!-- Add your organization's prod import map URL to this script's src  -->
   <!-- <script type="systemjs-importmap" src="/importmap.json"></script> -->
-    <script type="systemjs-importmap">
-    {
-      "imports": {
-          "@starwars/root-config": "https://turbo-sspa.vercel.app/starwars-root-config.js",
-          "@starwars/styleguide": "https://turbo-sspa.vercel.app/starwars-styleguide.js",
-          "@starwars/navbar": "https://turbo-sspa.vercel.app/starwars-navbar.js",
-          "@starwars/planets": "https://turbo-sspa.vercel.app/starwars-planets.js",
-          "@starwars/people": "https://turbo-sspa.vercel.app/starwars-people.js",
-          "@starwars/api": "https://turbo-sspa.vercel.app/starwars-api.js"
-      }
-    }
-  </script>
+    <script type="systemjs-importmap" src="https://turbo-sspa.vercel.app/importmap.json"> </script>
 
 
   <% if (isLocal) { %>
