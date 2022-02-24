@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "webpack serve --port 9004",
-    "build": "webpack --mode=production",
+    "build": "webpack --mode=production && cp ./dist/starwars-styleguide.js ../../apps/root-config/dist",
     "analyze": "webpack --mode=production --env analyze",
     "lint": "eslint src",
     "prettier": "prettier --write .",
